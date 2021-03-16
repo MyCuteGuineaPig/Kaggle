@@ -1,0 +1,65 @@
+digraph {
+    graph [ rankdir=TB ]
+
+    0 [ label="TechSupport_No<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    0 -> 1 [label="yes, missing" color="#0000FF"]
+    0 -> 2 [label="no" color="#FF0000"]
+
+    1 [ label="Contract_Two_year<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    1 -> 3 [label="yes, missing" color="#0000FF"]
+    1 -> 4 [label="no" color="#FF0000"]
+
+    3 [ label="Contract_One_year<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    3 -> 7 [label="yes, missing" color="#0000FF"]
+    3 -> 8 [label="no" color="#FF0000"]
+
+    7 [ label="OnlineSecurity_No_internet_service<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    7 -> 13 [label="yes, missing" color="#0000FF"]
+    7 -> 14 [label="no" color="#FF0000"]
+
+    13 [ label="leaf=0.0270967763" fillcolor="#e54302" shape="box" style="filled" ]
+
+    14 [ label="leaf=-0.0522954129" fillcolor="#e54302" shape="box" style="filled" ]
+
+    8 [ label="StreamingMovies_Yes<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    8 -> 15 [label="yes, missing" color="#0000FF"]
+    8 -> 16 [label="no" color="#FF0000"]
+
+    15 [ label="leaf=-0.144915268" fillcolor="#e54302" shape="box" style="filled" ]
+
+    16 [ label="leaf=-0.0356321856" fillcolor="#e54302" shape="box" style="filled" ]
+
+    4 [ label="leaf=-0.165767446" fillcolor="#e54302" shape="box" style="filled" ]
+
+    2 [ label="Contract_One_year<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    2 -> 5 [label="yes, missing" color="#0000FF"]
+    2 -> 6 [label="no" color="#FF0000"]
+
+    5 [ label="Contract_Two_year<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    5 -> 9 [label="yes, missing" color="#0000FF"]
+    5 -> 10 [label="no" color="#FF0000"]
+
+    9 [ label="PaperlessBilling_No<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    9 -> 17 [label="yes, missing" color="#0000FF"]
+    9 -> 18 [label="no" color="#FF0000"]
+
+    17 [ label="leaf=0.110671379" fillcolor="#e54302" shape="box" style="filled" ]
+
+    18 [ label="leaf=0.0577480495" fillcolor="#e54302" shape="box" style="filled" ]
+
+    10 [ label="leaf=-0.103196345" fillcolor="#e54302" shape="box" style="filled" ]
+
+    6 [ label="StreamingMovies_No<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    6 -> 11 [label="yes, missing" color="#0000FF"]
+    6 -> 12 [label="no" color="#FF0000"]
+
+    11 [ label="PaperlessBilling_No<0.5" fillcolor="#78cbe" shape="box" style="filled, rounded" ]
+    11 -> 19 [label="yes, missing" color="#0000FF"]
+    11 -> 20 [label="no" color="#FF0000"]
+
+    19 [ label="leaf=-0.00458015269" fillcolor="#e54302" shape="box" style="filled" ]
+
+    20 [ label="leaf=-0.0676691756" fillcolor="#e54302" shape="box" style="filled" ]
+
+    12 [ label="leaf=-0.092822969" fillcolor="#e54302" shape="box" style="filled" ]
+}
